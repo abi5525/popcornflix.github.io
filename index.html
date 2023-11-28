@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PopcornFlix</title>
+</head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<link rel="stylesheet" href="./css/popcorn.css">
+<link class="logo" rel="icon" type="image/x-icon" href="./img/popcorn-png-9433.png">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<body>
+    <!-- navbar start-->
+    <nav class="navbar navbar-expand-lg nav navbar-dark bg-dark py-4 pe-3 ps-1 sticky-top">
+      <div class="container-fluid ">
+        <img src="./img/popcorn-png-9433.png" width="40" height="35">
+        <a class="navbar-brand navh1 " href="#">Popcorn<span style="color:#dc3545">Flix</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active navh2" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link navh2" href="#latest">Latest</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link  navh2"  href="#genre">Genre</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link  navh2"  href="#plan">Plans</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link navh2" href="#contact">Contact</a>
+            </li>
+            
+          </ul>
+          <form class="d-flex ms-auto" role="search">
+            <input class="search2 me-1" type="search" placeholder="Search Products" required>
+            <button class="btn btn-danger" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+     <!-- navbar end -->
+
+
+     <!-- homepage start -->
+
+     <div class="container-fluid home">
+      <h1 class="hometext1">Welcome To Popcorn<span style="color:#dc3545;">Flix</span></h1>
+
+      <h2 class="hometext2 mb-2">Discover, Watch, and Enjoy the Best of Cinema</h2>
+
+      <div style="text-align: center;"class="mt-5">
+        <a href="#latest" class="btn btn-danger homebutton ">Explore More</a>
+      </div>
+   </div>
+   
+     <!-- homepage end -->
+
+
+     <!-- caousal start -->
+    <div id="latest"></div> 
+    <div class="container cerousalcont" >
+      <h1 class="newheading">What's New</h1>
+      <div id="carouselExampleCaptions" class="carousel slide mt-3">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+
+          <div class="carousel-item active">
+            <img src="./img/the-walking-dead-3840x2160-11831.jpg" class="d-block w-100 slide" alt="...">
+            <div class="carousel-caption d-none d-md-block slidecap">
+              <h4>The Walking Dead: Dead City</h4>
+              <p>Maggie and Negan travel into a post-apocalyptic Manhattan long ago cut off from the mainland; the crumbling city is filled with the dead and denizens who have made New York City their own world full of anarchy, danger, beauty and terror.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./img/one-piece-netflix-3840x2160-12664.jpg" class="d-block w-100 slide" alt="...">
+            <div class="carousel-caption d-none d-md-block slidecap">
+              <h4>One Piece</h4>
+              <p>Monkey D. Luffy and his pirate crew explore a fantastical world of endless oceans and exotic islands in search of the world's ultimate treasure to become the next Pirate King.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./img/ahsoka-star-wars-3840x2160-12063.jpg" class="d-block w-100 slide" alt="...">
+            <div class="carousel-caption d-none d-md-block slidecap">
+              <h4>Ahsoka</h4>
+              <p>Former Jedi knight Ahsoka Tano investigates an emerging threat to a vulnerable galaxy.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./img/wonka-2023-movies-5k-5120x2880-12512.jpeg" class="d-block w-100 slide" alt="...">
+            <div class="carousel-caption d-none d-md-block slidecap">
+              <h4>Wonka</h4>
+              <p>Focusing on a young Willy Wonka and how he came to meet the Oompa-Loompas on one of his earliest adventures.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+     <!-- carousal end -->
+
+
+ 
+     <div class="container searchcont">
+      <h1 class="searchbg">Search By Category</h1>
+        <p style="text-align: justify;"id="genre" class="mt-3" >Need some help deciding what to watch before all your popcorn runs out? We’ve got you covered! With this guide you can find the best movies to watch online across all languages, eras, and genres all under one roof. From seeing where to watch movies for free to keeping track of all the new movie releases, our easy-to-use guide is your go-to hub for all things movies.</p>
+  
+        <ul class="nav nav-pills mb-3 mt-5 nav-fill categories" id="pills-tab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="pills-action-tab" data-bs-toggle="pill" data-bs-target="#pills-action" type="button" role="tab" aria-controls="pills-action" aria-selected="true">Action</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-comedy-tab" data-bs-toggle="pill" data-bs-target="#pills-comedy" type="button" role="tab" aria-controls="pills-comedy" aria-selected="false">Comedy</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-sci-fi-tab" data-bs-toggle="pill" data-bs-target="#pills-sci-fi" type="button" role="tab" aria-controls="pills-sci-fi" aria-selected="false">Sci-fi</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link " id="pills-anime-tab" data-bs-toggle="pill" data-bs-target="#pills-anime" type="button" role="tab" aria-controls="pills-anime" aria-selected="false">Anime</button>
+          </li>
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+  
+          <div class="tab-pane fade show active" id="pills-action" role="tabpanel" aria-labelledby="pills-action-tab" tabindex="0">
+            <div class="row mt-5 px-0">
+              <div class="col-lg-3 col-sm-6 mb-3">
+                <div class="card card2">
+                  <img src="./img/extraction.jpg" class="card-img-top card1" alt="...">
+                  <div class="card-body text-center">
+                    <h5 class="card-title ">Extraction 2</h5>
+                    <a href="#" class="btn btn-dark">Watch Now</a>
+                    <a class="btn btn-danger ms-2">91%<i class="fa-solid fa-heart fa-lg ps-1" style="color: #ffffff;"></i></a>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col-lg-3 col-sm-6 mb-3 ">
+                <div class="card card2">
+                  <img src="./img/flash.jpg" class="card-img-top card1" alt="...">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">The Flash</h5>
+                    <a href="#" class="btn btn-dark">Watch Now</a>
+                    <a class="btn btn-danger ms-2">86%<i class="fa-solid fa-heart fa-lg ps-1" style="color: #ffffff;"></i></a>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col-lg-3 col-sm-6 mb-3">
+                <div class="card card2">
+                  <img src="./img/mi.jpg" class="card-img-top card1" alt="...">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Mission:impossible</h5>
+                    <a href="#" class="btn btn-dark">Watch Now</a>
+                    <a class="btn btn-danger ms-2">97%<i class="fa-solid fa-heart fa-lg ps-1" style="color: #ffffff;"></i></a>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col-lg-3 col-sm-6 mb-3">    
+              <div class="card card2">
+                <img src="./img/john.jpg" class="card-img-top card1" alt="...">
+                <div class="card-body text-center">
+                  <h5 class="card-title">John Wick 4</h5>
+                  <a href="#" class="btn btn-dark">Watch Now</a>
+                  <a class="btn btn-danger ms-2">90%<i class="fa-solid fa-heart fa-lg ps-1" style="color: #ffffff;"></i></a>
+                </div>
+              </div>
+              </div>
+            </div>
+  
+              <div class="row mt-5 px-0">
+                <div class="col-lg-3 col-sm-6 mb-3">
+                  <div class="card card2">
+                    <img src="./img/equalizer3.jpg" class="card-img-top card1" alt="...">
+                    <div class="card-body text-center">
+                      <h5 class="card-title ">The Equalizer 3</h5>
+                      <a href="#" class="btn btn-dark">Watch Now</a>
+                      <a class="btn btn-danger ms-2">89%<i class="fa-solid fa-heart fa-lg ps-1" style="color: #ffffff;"></i></a>
+                    </div>
+                  </div>
+                </div>
+        
+                <div class="col-lg-3 col-sm-6 mb-3">
+                  <div class="card card2">
+                    <img src="./img/spy.jpg" class="card-img-top card1" alt="...">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Spy Kids:Armageddon</h5>
+                      <a href="#" class="btn btn-dark">Watch Now</a>
+                      <a class="btn btn-danger ms-2">76%<i class="fa-solid fa-heart fa-lg ps-1" style="color: #ffffff;"></i></a>
+                    </div>
+                  </div>
+                </div>
+        
+                <div class="col-lg-3 col-sm-6 mb-3">
+                  <div class="card card2">
+                    <img src="./img/hiddenstrike.jpg" class="card-img-top card1" alt="...">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Hidden Strike</h5>
+                      <a href="#" class="btn btn-dark">Watch Now</a>
+                      <a class="btn btn-danger ms-2">78%<i class="fa-solid fa-heart fa-lg ps-1" style="color: #ffffff;"></i></a>
+                    </div>
+                  </div>
+                </div>
+        
+                <div class="col-lg-3 col-sm-6 mb-3">    
+                <div class="card card2">
+                  <img src="./img/They Cloned Thyrone.jpg" class="card-img-top card1" alt="...">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">They Cloned Thyrone</h5>
+                    <a href="#" class="btn btn-dark">Watch Now</a>
+                    <a class="btn btn-danger ms-2">84%<i class="fa-solid fa-heart fa-lg ps-1" style="color: #ffffff;"></i></a>
+                    <div id="comedy" ></div>
+                  </div>
+                </div>
+                </div>
+              </div>
+              <div class="text-center mt-1">
+                <button type="button" class="btn btn-secondary mt-2">More>></button>
+              </div>
+            </div>
+  
+          <!-- comedy start -->
+  
+          <div class="tab-pane fade" id="pills-comedy" role="tabpanel" aria-labelledby="pills-comedy-tab" tabindex="0">
+            <div class="container mt-4 px-0">
+              
+              <div class="row mt-5 ">
+                <div class="col-lg-3 col-sm-6 mb-3">
+                  <div class="card card2">
+                    <img src="./img/barbie.jpg" class="card-img-top card1" alt="...">
+                    <div class="card-body text-center">
+                      <h5 class="card-title ">Barbie</h5>
+                      <a href="#" class="btn btn-dark">Watch Now</a>
+                      <a class="btn btn-danger ms-2">93%<i class="fa-solid fa-heart fa-lg ps-1" style="color: #ffffff;"></i></a>
+                    </div>
+                  </div>
+                </div>
+        
+                <div class="col-lg-3 col-sm-6 mb-3 ">
+                  <div class="card card2">
+                    <img src="./img/jumanji.jpg" class="card-img-top card1" alt="...">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Jumanji</h5>
+                      <a href="#" class="btn btn-dark">Watch Now</a>
+                      <a class="btn btn-danger ms-2">91%<i class="fa-solid fa-heart fa-lg ps-1" style="color: #ffffff;"></i></a>
+                    </div>
+                  </div>
+                </div>
+        
+                <div class="col-lg-3 col-sm-6 mb-3">
+                  <div class="card card2">
+                    <img src="./img/ride along2.jpg" class="card-img-top card1" alt="...">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Ride Along 2</h5>
+                      <a href="#" class="btn btn-dark">Watch Now</a>
+                      <a class="btn btn-danger ms-2">87%<i class="fa-solid fa-heart fa-lg ps-1" style="color: #ffffff;"></i></a>
+                    </div>
+                  </div>
+                </div>
+        
+                <div class="col-lg-3 col-sm-6 mb-3">    
+                <div class="card card2">
+                  <img src="./img/murder mystery 2.jpg" class="card-img-top card1" alt="...">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Murder Mystery 2</h5>
+                    <a href="#" class="btn btn-dark">Watch Now</a>
+                    <a class="btn btn-danger ms-2">90%<i class="fa-solid fa-heart fa-lg ps-1" style="color: #ffffff;"></i></a>
+                  </div>
+                </div>
+                </div>
+              </div>
+            </div>
+        
+        
+            <div class="container mt-5 px-0">
+              <div class="row mt-2 ">
+                <div class="col-lg-3 col-sm-6 mb-3">
+                  <div class="card card2">
+                    <img src="./img/ci.jpg" class="card-img-top card1" alt="...">
+                    <div class="card-body text-center">
+                      <h5 class="card-title ">Central Intelligence</h5>
+                      <a href="#" class="btn btn-dark">Watch Now</a>
+                      <a class="btn btn-danger ms-2">89%<i class="fa-solid fa-heart fa-lg ps-1" style="color: #ffffff;"></i></a>
+                    </div>
+                  </div>
+                </div>
+        
+                <div class="col-lg-3 col-sm-6 mb-3">
+                  <div class="card card2">
+                    <img src="./img/spy2.jpg" class="card-img-top card1" alt="...">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Spy</h5>
+                      <a href="#" class="btn btn-dark">Watch Now</a>
+                      <a class="btn btn-danger ms-2">83%<i class="fa-solid fa-heart fa-lg ps-1" style="color: #ffffff;"></i></a>
+                    </div>
+                  </div>
+                </div>
+        
+                <div class="col-lg-3 col-sm-6 mb-3">
+                  <div class="card card2">
+                    <img src="./img/baywatch.jpg" class="card-img-top card1" alt="...">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Baywatch</h5>
+                      <a href="#" class="btn btn-dark">Watch Now</a>
+                      <a class="btn btn-danger ms-2">88%<i class="fa-solid fa-heart fa-lg ps-1" style="color: #ffffff;"></i></a>
+                    </div>
+                  </div>
+                </div>
+        
+                <div class="col-lg-3 col-sm-6 mb-3">    
+                <div class="card card2">
+                  <img src="./img/dictator.jpg" class="card-img-top card1" alt="...">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Dictator</h5>
+                    <a href="#" class="btn btn-dark">Watch Now</a>
+                    <a class="btn btn-danger ms-2">92%<i class="fa-solid fa-heart fa-lg ps-1" style="color: #ffffff;"></i></a>
+                    <div id="sci-fi" ></div>
+                  </div>
+                </div>
+                </div>
+              </div>
+              <div class="text-center mt-1">
+                <button type="button" class="btn btn-secondary mt-2">More>></button>
+              </div>
+            </div>
+          </div>
+          <!-- comedy end -->
+  
+  
+          <!-- sci-fi start -->
+          <div class="tab-pane fade" id="pills-sci-fi" role="tabpanel" aria-labelledby="pills-sci-fi-tab" tabindex="0">
+            <div class="container mt-4 px-0">
+              
+              <div class="row mt-5 ">
+                <div class="col-lg-3 col-sm-6 mb-3">
+                  <div class="card card2">
+                    <img src="./img/s1.jpg" class="card-img-top card1" alt="...">
+                    <div class="card-body text-center">
+                      <h5 class="card-title ">Avengers:The End Game</h5>
+                      <a href="#" class="btn btn-dark">Watch Now</a>
+                      <a class="btn btn-danger ms-2">98%<i class="fa-solid fa-heart fa-lg ps-1" style="color: #ffffff;"></i></a>
+                    </div>
+                  </div>
+                </div>
+        
+                <div class="col-lg-3 col-sm-6 mb-3 ">
+                  <div class="card card2">
+                    <img src="./img/s2.jpg" class="card-img-top card1" alt="...">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Avatar:The Way of Water</h5>
+                      <a href="#" class="btn btn-dark">Watch Now</a>
+                      <a class="btn btn-danger ms-2">97%<i class="fa-solid fa-heart fa-lg ps-1" style="color: #ffffff;"></i></a>
+                    </div>
+                  </div>
+                </div>
+        
+                <div class="col-lg-3 col-sm-6 mb-3">
+                  <div class="card card2">
+                    <img src="./img/s3.jpg" class="card-img-top card1" alt="...">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Prey</h5>
+                      <a href="#" class="btn btn-dark">Watch Now</a>
+                      <a class="btn btn-danger ms-2">88%<i class="fa-solid fa-heart fa-lg ps-1" style="color: #ffffff;"></i></a>
+                    </div>
+                  </div>
+                </div>
+        
+                <div class="col-lg-3 col-sm-6 mb-3">    
+                <div class="card card2">
+                  <img src="./img/s4.jpg" class="card-img-top card1" alt="...">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Megan</h5>
+                    <a href="#" class="btn btn-dark">Watch Now</a>
+                    <a class="btn btn-danger ms-2">93%<i class="fa-solid fa-heart fa-lg ps-1" style="color: #ffffff;"></i></a>
+                  </div>
+                </div>
+                </div>
+              </div>
+            </div>
+        
+        
+            <div class="container mt-3 px-0">
+              <div class="row mt-5 ">
+                <div class="col-lg-3 col-sm-6 mb-3">
+                  <div class="card card2">
+                    <img src="./img/s5.jpg" class="card-img-top card1" alt="...">
+                    <div class="card-body text-center">
+                      <h5 class="card-title ">Dune</h5>
+                      <a href="#" class="btn btn-dark">Watch Now</a>
+                      <a class="btn btn-danger ms-2">91%<i class="fa-solid fa-heart fa-lg ps-1" style="color: #ffffff;"></i></a>
+                    </div>
+                  </div>
+                </div>
+        
+                <div class="col-lg-3 col-sm-6 mb-3">
+                  <div class="card card2">
+                    <img src="./img/s6.jpg" class="card-img-top card1" alt="...">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Interstellar</h5>
+                      <a href="#" class="btn btn-dark">Watch Now</a>
+                      <a class="btn btn-danger ms-2">96%<i class="fa-solid fa-heart fa-lg ps-1" style="color: #ffffff;"></i></a>
+                    </div>
+                  </div>
+                </div>
+        
+                <div class="col-lg-3 col-sm-6 mb-3">
+                  <div class="card card2">
+                    <img src="./img/s7.jpg" class="card-img-top card1" alt="...">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Edge of Tomorrow</h5>
+                      <a href="#" class="btn btn-dark">Watch Now</a>
+                      <a class="btn btn-danger ms-2">91%<i class="fa-solid fa-heart fa-lg ps-1" style="color: #ffffff;"></i></a>
+                    </div>
+                  </div>
+                </div>
+        
+                <div class="col-lg-3 col-sm-6 mb-3">    
+                <div class="card card2">
+                  <img src="./img/s8.jpg" class="card-img-top card1" alt="...">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Matrix</h5>
+                    <a href="#" class="btn btn-dark">Watch Now</a>
+                    <a class="btn btn-danger ms-2">90%<i class="fa-solid fa-heart fa-lg ps-1" style="color: #ffffff;"></i></a>
+                    <div id="anime"></div>
+                  </div>
+                </div>
+                </div>
+              </div>
+              <div class="text-center mt-1">
+                <button type="button" class="btn btn-secondary mt-2">More>></button>
+              </div>
+            </div>
+          </div>
+          <!-- sci-fi ends -->
+  
+          <!-- anime starts -->
+          <div class="tab-pane fade" id="pills-anime" role="tabpanel" aria-labelledby="pills-anime-tab" tabindex="0">
+            <div class="container mt-4 px-0">
+              
+              <div class="row mt-5">
+                <div class="col-lg-3 col-sm-6 mb-3">
+                  <div class="card card2">
+                    <img src="./img/a1.jpg" class="card-img-top card1" alt="...">
+                    <div class="card-body text-center">
+                      <h5 class="card-title ">Jujutsu Kaisen</h5>
+                      <a href="#" class="btn btn-dark">Watch Now</a>
+                      <a class="btn btn-danger ms-2">98%<i class="fa-solid fa-heart fa-lg ps-1" style="color: #ffffff;"></i></a>
+                    </div>
+                  </div>
+                </div>
+        
+                <div class="col-lg-3 col-sm-6 mb-3 ">
+                  <div class="card card2">
+                    <img src="./img/a2.jpg" class="card-img-top card1" alt="...">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Chainsaw Man</h5>
+                      <a href="#" class="btn btn-dark">Watch Now</a>
+                      <a class="btn btn-danger ms-2">92%<i class="fa-solid fa-heart fa-lg ps-1" style="color: #ffffff;"></i></a>
+                    </div>
+                  </div>
+                </div>
+        
+                <div class="col-lg-3 col-sm-6 mb-3">
+                  <div class="card card2">
+                    <img src="./img/a3.jpg" class="card-img-top card1" alt="...">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Winland Saga</h5>
+                      <a href="#" class="btn btn-dark">Watch Now</a>
+                      <a class="btn btn-danger ms-2">95%<i class="fa-solid fa-heart fa-lg ps-1" style="color: #ffffff;"></i></a>
+                    </div>
+                  </div>
+                </div>
+        
+                <div class="col-lg-3 col-sm-6 mb-3">    
+                <div class="card card2">
+                  <img src="./img/a4.jpg" class="card-img-top card1" alt="...">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Death Note</h5>
+                    <a href="#" class="btn btn-dark">Watch Now</a>
+                    <a class="btn btn-danger ms-2">99%<i class="fa-solid fa-heart fa-lg ps-1" style="color: #ffffff;"></i></a>
+                  </div>
+                </div>
+                </div>
+              </div>
+            </div>
+        
+        
+            <div class="container mt-3 px-0">
+              <div class="row mt-5 ">
+                <div class="col-lg-3 col-sm-6 mb-3">
+                  <div class="card card2">
+                    <img src="./img/a5.jpg" class="card-img-top card1" alt="...">
+                    <div class="card-body text-center">
+                      <h5 class="card-title ">Naruto:Shippuden</h5>
+                      <a href="#" class="btn btn-dark">Watch Now</a>
+                      <a class="btn btn-danger ms-2">97%<i class="fa-solid fa-heart fa-lg ps-1" style="color: #ffffff;"></i></a>
+                    </div>
+                  </div>
+                </div>
+        
+                <div class="col-lg-3 col-sm-6 mb-3">
+                  <div class="card card2">
+                    <img src="./img/a6.jpg" class="card-img-top card1" alt="...">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Super Crooks</h5>
+                      <a href="#" class="btn btn-dark">Watch Now</a>
+                      <a class="btn btn-danger ms-2">89%<i class="fa-solid fa-heart fa-lg ps-1" style="color: #ffffff;"></i></a>
+                    </div>
+                  </div>
+                </div>
+        
+                <div class="col-lg-3 col-sm-6 mb-3">
+                  <div class="card card2">
+                    <img src="./img/a7.jpg" class="card-img-top card1" alt="...">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Tokyo Revengers</h5>
+                      <a href="#" class="btn btn-dark">Watch Now</a>
+                      <a class="btn btn-danger ms-2">91%<i class="fa-solid fa-heart fa-lg ps-1" style="color: #ffffff;"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 mb-3">    
+                <div class="card card2">
+                  <img src="./img/a8.jpg" class="card-img-top card1" alt="...">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Castlevania</h5>
+                    <a href="#" class="btn btn-dark">Watch Now</a>
+                    <a class="btn btn-danger ms-2">88%<i class="fa-solid fa-heart fa-lg ps-1" style="color: #ffffff;"></i></a>
+                  </div>
+                </div>
+                </div>
+              </div>
+              <div  class="text-center mt-1">
+                <button type="button" class="btn btn-secondary mt-2">More>></button>
+                
+              </div>
+            </div>
+          </div>
+          <div id="plan"></div>
+          <br>
+          <!-- anime ends -->
+        </div>
+        </div>
+     </div>
+    
+    <!-- price plan start -->
+
+    <div id="plan" class="container plancont1 ">
+    <div class="container-fluid mt-5 plancontainer">
+      <h1 class="planh px-0">Plans and Pricing</h1>
+      <div class="row plan ">
+        <div class="col-lg-3 col-sm-5 col-8 planbox px-0 mb-4">
+            <h2 class="planh2">Basic</h2>
+            <h1 style="text-align: center; font-weight: bold;">₹99/<span style="font-size:15px; ">month</span></h1>
+            <div class="plancont">
+            <p>Video Resolution Upto 480p</p>
+            <p>Maximum 20 Downloads/Month</p>
+            <p>Supported Device: Mobile only</p>
+            <p>Sterio Audio Quality</p>
+            <div class="pt-4">
+              <a class="btn btn-primary px-4">Buy</a>
+            </div>
+            </div>
+            
+        </div>
+        <div class="col-lg-3 col-sm-5 col-8 planbox px-0 mb-4">
+          <h2 class="planh3">Standard</h2>
+          <h1 style="text-align: center; font-weight: bold;">₹299/<span style="font-size:15px; ">month</span></h1>
+          <div class="plancont">
+          <p>Video Resolution Upto 720p</p>
+          <p>Maximum 100 Downloads/Month</p>
+          <p>Supported Device: Mobile, Laptop</p>
+          <p>Dolby Atmos Audio Quality</p>
+          <div class="pt-4">
+            <a class="btn btn-warning px-4 text-light">Buy</a>
+          </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-5 col-8 planbox px-0">
+          <h2 class="planh4">Premium</h2>
+          <h1 style="text-align: center; font-weight: bold;">₹499/<span style="font-size:15px; ">month</span></h1>
+          <div class="plancont">
+          <p>Video Resolution Upto 4k</p>
+          <p>Unlimited Downloads</p>
+          <p>All Device Support</p>
+          <p>All Premium Features</p>
+          <div class="pt-4">
+            <a class="btn btn-danger px-4">Buy</a>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+  <br>
+
+    <!-- price plan end -->
+
+    <!-- contact start -->
+  <div id="contact" class="container  contcont mb-5">
+    <div class="container">
+      <h1 class="ch">Contact With Us</h1>
+      <p class="ch2">We would love to respond to your queries and help you succeed. Feel free to get in touch with us </p>
+      <div class="row contact">
+        <div class="col-lg-7 col-md-12 contact-left ">
+          <h4 class="contacth3">Send your request</h4>
+          <form class="px-4">
+            <div class="input-row">
+                <div class="input-group">
+                    <label>Name</label>
+                    <input type="text" placeholder="Enter Your Name">
+                </div>
+                <div class="input-group">
+                    <label>Phone</label>
+                    <input type="text" placeholder="Enter Your Phone">
+                </div>
+            </div>
+            <div class="input-row">
+                <div class="input-group">
+                    <label>Email</label>
+                    <input type="text" placeholder="Enter Your Email">
+                </div>
+                <div class="input-group">
+                    <label>Subject</label>
+                    <input type="text" placeholder="Enter Your Subject">
+                </div>
+            </div>
+
+            <label>Message</label>
+            <textarea rows="6" placeholder="Write Your Message"></textarea>
+        </form>
+        <button class="contact-button me-4" type="submiit">SEND</button>
+        </div>
+        <div class="col-lg-5 col-md-12 contact-right">
+          <h4 class="contacth5">Reach Us</h4>
+          <div class="contact-right2" >
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3913.094884265204!2d75.78000267804737!3d11.254430121662548!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba6599c78df8529%3A0x694910010356517f!2sFrugal%20Scientific%20Pvt%20Ltd!5e0!3m2!1sen!2sin!4v1698764256328!5m2!1sen!2sin" width="400" height="320" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+    </div>
+    </div>
+    </div>
+
+    <!-- contact end -->
+
+    <br>
+    <!-- footer start -->
+
+    <footer>
+      <div class="row footrow">
+        <div class="col footcol ">
+          <div class="d-flex">
+            <img src="./img/popcorn-png-9433.png" width="35" height="30">
+            <h4 class="foothead ">PopcornFlix</h4>
+          </div> 
+          <p style="text-align: left;">At PopcornFlix we are passionate about all things cinema.</p>
+          <p><i class="fa-regular fa-envelope pe-1" style="color: #ffffff;"></i> watchpopcornflix@gmail.com</p>
+          <p><i class="fa-solid fa-globe pe-1" style="color: #ffffff;"></i>Frugal Scientific Pvt Ltd Makkolath Ln<br> Opposite Coronation Theatre, Palayam<br> Kozhikode, Kerala 673004</p>
+          </div>
+
+        <div class="col footcol">
+          <h4 class="foothead">Support <div class="underline"><span></span> </div></h4>
+          <p class="mb-2"><a class="ql" href="#contact">Contact Us</a></p>
+          <p class="mb-2"><a class="ql" href="#">FAQ</a></p>
+          <p class="mb-2"><a class="ql" href="#">Downloads</a></p>
+          <p class="mb-2"><a class="ql" href="#">Terms of Service</a></p>
+        </div>
+
+        <div class="col footcol">
+          <h4 class="foothead">Quick Links <div class="underline"><span></span></h4>
+        <p class="mb-2 "><a class="ql" href="#">Home</a></p>
+        <p class="mb-2 "><a class="ql" href="#latest">What's New</a></p>
+        <p class="mb-2 "><a class="ql" href="#genre">Movies</a></p>
+        <p class="mb-2 "><a class="ql" href="#plan">Plans</a></p>
+        </div>
+
+        <div class="col footcol">
+          <h3 class="foothead" >Newsletter <div class="underline"><span></span></h3>
+          <form class="footform">
+            <i class="far fa-envelope form-envolope" style="color: #ffffff;"></i>
+            <input class="form-input" type="email" placeholder="Enter Your Email id" required>
+            <button class="form-button" type="submit"><i class="fas fa-arrow-right"></i></button>
+          </form>
+          <div class="iconm">
+            <a href="https://wa.me/8111955282"><i class="fa-brands fa-whatsapp fa-2xl pe-3 iconw" ></i></a>
+            <a href="https://www.facebook.com/login/"><i class="fa-brands fa-facebook fa-2xl pe-3 iconf"></i></a>
+            <a href="https://www.instagram.com/accounts/login/"><i class="fa-brands fa-instagram fa-2xl iconin"></i></a>
+           </div>
+        </div>
+      </div>
+      <hr>
+      <p class="copycont">© 2023 PopcornFlix . All rights reserved</p>
+    </footer>
+
+
+   <!-- footer end -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
